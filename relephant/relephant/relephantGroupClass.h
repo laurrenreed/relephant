@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface relephantGroupClass : NSObject
+@property (strong, nonatomic)NSString *groupName;
+@property (strong, nonatomic)NSMutableArray *membersArray;
+@property (nonatomic,strong)NSNumber *priceCap;
+@property (strong, nonatomic)NSString *groupDetail;
+
 
 @end
