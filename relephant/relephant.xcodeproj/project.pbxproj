@@ -14,8 +14,9 @@
 		251CC0591BDEC65200979205 /* relephant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0571BDEC65200979205 /* relephant.xcdatamodeld */; };
 		251CC05B1BDEC65200979205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC05A1BDEC65200979205 /* Assets.xcassets */; };
 		251CC05E1BDEC65200979205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251CC05C1BDEC65200979205 /* LaunchScreen.storyboard */; };
-		251CC0671BDEC78600979205 /* relephantGroupClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0661BDEC78600979205 /* relephantGroupClass.m */; settings = {ASSET_TAGS = (); }; };
-		251CC06A1BDEC7B800979205 /* relephantUserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0691BDEC7B800979205 /* relephantUserClass.m */; settings = {ASSET_TAGS = (); }; };
+		251CC0671BDEC78600979205 /* relephantGroupClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0661BDEC78600979205 /* relephantGroupClass.m */; };
+		251CC06A1BDEC7B800979205 /* relephantUserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0691BDEC7B800979205 /* relephantUserClass.m */; };
+		891850C01BE1307300C24DE3 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891850BF1BE1307300C24DE3 /* QuizViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		251CC0661BDEC78600979205 /* relephantGroupClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = relephantGroupClass.m; sourceTree = "<group>"; };
 		251CC0681BDEC7B800979205 /* relephantUserClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relephantUserClass.h; sourceTree = "<group>"; };
 		251CC0691BDEC7B800979205 /* relephantUserClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = relephantUserClass.m; sourceTree = "<group>"; };
+		891850BE1BE1307300C24DE3 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		891850BF1BE1307300C24DE3 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				251CC04F1BDEC65200979205 /* AppDelegate.m */,
 				251CC0511BDEC65200979205 /* ViewController.h */,
 				251CC0521BDEC65200979205 /* ViewController.m */,
+				891850BE1BE1307300C24DE3 /* QuizViewController.h */,
+				891850BF1BE1307300C24DE3 /* QuizViewController.m */,
 				251CC0541BDEC65200979205 /* Main.storyboard */,
 				251CC05A1BDEC65200979205 /* Assets.xcassets */,
 				251CC05C1BDEC65200979205 /* LaunchScreen.storyboard */,
@@ -166,6 +171,7 @@
 				251CC0531BDEC65200979205 /* ViewController.m in Sources */,
 				251CC06A1BDEC7B800979205 /* relephantUserClass.m in Sources */,
 				251CC0591BDEC65200979205 /* relephant.xcdatamodeld in Sources */,
+				891850C01BE1307300C24DE3 /* QuizViewController.m in Sources */,
 				251CC0671BDEC78600979205 /* relephantGroupClass.m in Sources */,
 				251CC0501BDEC65200979205 /* AppDelegate.m in Sources */,
 				251CC04D1BDEC65200979205 /* main.m in Sources */,
@@ -317,6 +323,7 @@
 				251CC0641BDEC65200979205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
