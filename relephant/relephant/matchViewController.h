@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "relephantUserClass.h"
 
 @interface matchViewController : UIViewController
+
+
+
+-(void)generateTestUsers:(relephantUserClass *) user;
+
+
 
 @end
