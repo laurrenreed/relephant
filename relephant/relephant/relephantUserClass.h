@@ -10,6 +10,12 @@
 
 @interface relephantUserClass : NSObject
 @property (strong, nonatomic, readwrite)NSString *userName;
-@property (strong, nonatomic, readwrite)NSMutableArray *userInterests;
+@property (strong, nonatomic, readwrite)NSString *favEmoji;
+@property (strong, nonatomic, readwrite)NSString *favAnimal;
+@property (strong, nonatomic, readwrite)NSString *favWeather;
+@property (strong, nonatomic, readwrite)NSString *astrologicalSymbol;
+@property (strong, nonatomic, readwrite)NSString *favSport;
+@property (nonatomic, readwrite)BOOL dayOrNight;
+@property (nonatomic, readwrite)BOOL tacoOrPizza;
 
 @end

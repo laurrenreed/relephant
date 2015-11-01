@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oup-nz-ZdV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--loginOrRegisterView-->
@@ -142,7 +143,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uaq-oN-Lj9" id="cPz-ht-73B">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -194,7 +195,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="matchCell" tableViewCell="iaE-pQ-yXR" id="y2S-Gb-sR7">
-                                            <rect key="frame" x="0.0" y="0.0" width="207" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -228,7 +229,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qg9-UP-cgb" id="bci-Ll-XPm">
-                                            <rect key="frame" x="0.0" y="0.0" width="207" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -279,7 +280,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="groupMemberCell" tableViewCell="ugv-gp-Efk" id="D2M-Oq-PX3">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -320,7 +321,7 @@
         <!--matchView-->
         <scene sceneID="xWh-wB-jqI">
             <objects>
-                <viewController title="matchView" id="0BQ-uD-87V" sceneMemberID="viewController">
+                <viewController title="matchView" id="0BQ-uD-87V" customClass="matchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8rf-w8-qqK"/>
                         <viewControllerLayoutGuide type="bottom" id="5kl-uN-C1C"/>
@@ -336,9 +337,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ6-Jh-tXI">
+                                <rect key="frame" x="139" y="503" width="43" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Match"/>
+                                <connections>
+                                    <action selector="matchViewTapped:" destination="0BQ-uD-87V" eventType="touchUpInside" id="1uX-Ke-vAF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eQ6-Jh-tXI" secondAttribute="trailing" constant="118" id="DhS-Nr-iox"/>
+                            <constraint firstItem="eQ6-Jh-tXI" firstAttribute="leading" secondItem="STK-nO-ovg" secondAttribute="leadingMargin" constant="119" id="nkK-1j-naf"/>
+                            <constraint firstItem="5kl-uN-C1C" firstAttribute="top" secondItem="eQ6-Jh-tXI" secondAttribute="bottom" constant="35" id="vsb-cB-9XQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LXI-5c-l25"/>
                 </viewController>
