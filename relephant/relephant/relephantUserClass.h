@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QuizViewController.h"
 
 @interface relephantUserClass : NSObject
 @property (strong, nonatomic, readwrite)NSString *userName;
@@ -17,5 +18,7 @@
 @property (strong, nonatomic, readwrite)NSString *favSport;
 @property (nonatomic, readwrite)BOOL dayOrNight;
 @property (nonatomic, readwrite)BOOL tacoOrPizza;
+
+-(void)generateTestUsers;
 
 @end

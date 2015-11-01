@@ -9,14 +9,6 @@
 #import "relephantUserClass.h"
 
 @implementation relephantUserClass
-@end
-
-
-
-
-
-
-
 
 
 

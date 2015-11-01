@@ -9,6 +9,13 @@
 #import "QuizViewController.h"
 
 @interface QuizViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *tacoOrPizzaInput;
+@property (weak, nonatomic) IBOutlet UITextField *faveSportInput;
+@property (weak, nonatomic) IBOutlet UITextField *dayOrNightInput;
+@property (weak, nonatomic) IBOutlet UITextField *faveAnimalInput;
+@property (weak, nonatomic) IBOutlet UITextField *faveWeatherInput;
+@property (weak, nonatomic) IBOutlet UITextField *astroSymbolInput;
+@property (weak, nonatomic) IBOutlet UITextField *faveEmojiInput;
 
 @end
 
@@ -16,22 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
