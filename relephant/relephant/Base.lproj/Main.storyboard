@@ -169,13 +169,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zay-bS-Zi4">
-                                <rect key="frame" x="127" y="88" width="66" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="okU-8E-szx">
                                 <rect key="frame" x="40" y="117" width="240" height="168"/>
                                 <animations/>
@@ -191,7 +184,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="0BQ-uD-87V" kind="push" id="PvH-p4-Xz4"/>
+                                            <segue destination="0BQ-uD-87V" kind="push" identifier="moveToMatchPage" id="PvH-p4-Xz4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -221,13 +214,17 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="JvM-7X-cty" kind="push" id="aCb-pw-gGc"/>
+                                            <segue destination="JvM-7X-cty" kind="push" identifier="moveToGroupPage" id="aCb-pw-gGc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyq-Jf-k4g">
-                                <rect key="frame" x="121" y="20" width="79" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="a5R-oI-gtv">
+                                <rect key="frame" x="20" y="16" width="99" height="93"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zay-bS-Zi4">
+                                <rect key="frame" x="127" y="88" width="66" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -246,7 +243,7 @@
         <!--groupView-->
         <scene sceneID="nYR-Ia-OoY">
             <objects>
-                <viewController title="groupView" id="JvM-7X-cty" sceneMemberID="viewController">
+                <viewController title="groupView" id="JvM-7X-cty" customClass="GroupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FjE-v4-ncS"/>
                         <viewControllerLayoutGuide type="bottom" id="Tgw-5p-QUm"/>
@@ -309,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHn-EO-OgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="869"/>
+            <point key="canvasLocation" x="116" y="791"/>
         </scene>
         <!--matchView-->
         <scene sceneID="xWh-wB-jqI">
@@ -351,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chp-CW-M5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="122"/>
+            <point key="canvasLocation" x="521" y="122"/>
         </scene>
         <!--createAccountView-->
         <scene sceneID="4Ro-Zk-ooV">
@@ -563,4 +560,7 @@
             <point key="canvasLocation" x="-1137" y="122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="640" height="605"/>
+    </resources>
 </document>

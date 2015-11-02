@@ -3,9 +3,15 @@
 #import "RelephantGroup.h"
 @interface RelephantUser : NSObject
 
-@property (strong, nonatomic, readwrite) NSString *userId;
-@property (strong, nonatomic, readwrite) NSString *name;
+
+
 @property (strong, nonatomic, readwrite) NSArray *groupsIds;
+@property (weak, nonatomic) RelephantUser *bestMatchedUser;
+@property (nonatomic) NSInteger highestMatchScore;
+
+@property (strong, nonatomic, readwrite) NSString *name;
+@property (strong, nonatomic, readwrite) NSString *userId;
+
 
 // choices for matching...
 @property (strong, nonatomic, readwrite) NSString *favoriteEmoji;
@@ -16,10 +22,23 @@
 @property (strong, nonatomic, readwrite) NSString *dayOrNight;
 @property (strong, nonatomic, readwrite) NSString *tacoOrPizza;
 
-@property (weak, nonatomic) RelephantUser *bestMatchedUser;
 
-@property (nonatomic) NSInteger highestMatchScore;
 
 - (NSInteger)makeComparisonToUser:(RelephantUser *)user;
+
+- (instancetype)initWithUserId:(NSString *)userID
+                          name:(NSString *)name
+                 favoriteEmoji:(NSString *)emoji
+                favoriteAnimal:(NSString *)animal
+               favoriteWeather:(NSString *)weather
+                   astroSymbol:(NSString *)astroSymbol
+                 favoriteSport:(NSString *)sport
+                    dayOrNight:(NSString *)dayOrNight
+                   tacoOrPizza:(NSString *)tacoOrPizza;
+
+- (instancetype)init;
+
+
+
 
 @end

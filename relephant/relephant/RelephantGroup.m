@@ -24,8 +24,10 @@
         
         return;
     }
+    
 
-    // TODO: shuffle array
+    // TODO: shuffle array before for loop
+    
     
     for (RelephantUser *currentUser in self.members) {
         
@@ -34,6 +36,8 @@
         if (currentUser.bestMatchedUser) {
             continue;
         }
+        
+        // TODO: what if two users have the same score... add random number generator
         
         for (RelephantUser *matchedUser in self.members) {
             
