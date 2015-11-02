@@ -14,9 +14,11 @@
 		251CC0591BDEC65200979205 /* relephant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0571BDEC65200979205 /* relephant.xcdatamodeld */; };
 		251CC05B1BDEC65200979205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC05A1BDEC65200979205 /* Assets.xcassets */; };
 		251CC05E1BDEC65200979205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251CC05C1BDEC65200979205 /* LaunchScreen.storyboard */; };
-		251CC0671BDEC78600979205 /* relephantGroupClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0661BDEC78600979205 /* relephantGroupClass.m */; };
-		251CC06A1BDEC7B800979205 /* relephantUserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0691BDEC7B800979205 /* relephantUserClass.m */; };
-		257A5A6E1BE67A6500E9E98C /* matchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257A5A6D1BE67A6500E9E98C /* matchViewController.m */; };
+		251CC0671BDEC78600979205 /* RelephantGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0661BDEC78600979205 /* RelephantGroup.m */; };
+		251CC06A1BDEC7B800979205 /* RelephantUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 251CC0691BDEC7B800979205 /* RelephantUser.m */; };
+		257A5A6E1BE67A6500E9E98C /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257A5A6D1BE67A6500E9E98C /* MatchViewController.m */; };
+		890301381BE6A3B100B90767 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890301371BE6A3B100B90767 /* MainViewController.m */; };
+		8903013B1BE6B12A00B90767 /* RelephantDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903013A1BE6B12A00B90767 /* RelephantDataStore.m */; };
 		891850C01BE1307300C24DE3 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891850BF1BE1307300C24DE3 /* QuizViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -32,12 +34,16 @@
 		251CC05A1BDEC65200979205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251CC05D1BDEC65200979205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		251CC05F1BDEC65200979205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		251CC0651BDEC78600979205 /* relephantGroupClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relephantGroupClass.h; sourceTree = "<group>"; };
-		251CC0661BDEC78600979205 /* relephantGroupClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = relephantGroupClass.m; sourceTree = "<group>"; };
-		251CC0681BDEC7B800979205 /* relephantUserClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relephantUserClass.h; sourceTree = "<group>"; };
-		251CC0691BDEC7B800979205 /* relephantUserClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = relephantUserClass.m; sourceTree = "<group>"; };
-		257A5A6C1BE67A6500E9E98C /* matchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matchViewController.h; sourceTree = "<group>"; };
-		257A5A6D1BE67A6500E9E98C /* matchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = matchViewController.m; sourceTree = "<group>"; };
+		251CC0651BDEC78600979205 /* RelephantGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelephantGroup.h; sourceTree = "<group>"; };
+		251CC0661BDEC78600979205 /* RelephantGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelephantGroup.m; sourceTree = "<group>"; };
+		251CC0681BDEC7B800979205 /* RelephantUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelephantUser.h; sourceTree = "<group>"; };
+		251CC0691BDEC7B800979205 /* RelephantUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelephantUser.m; sourceTree = "<group>"; };
+		257A5A6C1BE67A6500E9E98C /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		257A5A6D1BE67A6500E9E98C /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
+		890301361BE6A3B100B90767 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		890301371BE6A3B100B90767 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		890301391BE6B12A00B90767 /* RelephantDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelephantDataStore.h; sourceTree = "<group>"; };
+		8903013A1BE6B12A00B90767 /* RelephantDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelephantDataStore.m; sourceTree = "<group>"; };
 		891850BE1BE1307300C24DE3 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		891850BF1BE1307300C24DE3 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,18 +78,22 @@
 		251CC04A1BDEC65200979205 /* relephant */ = {
 			isa = PBXGroup;
 			children = (
-				257A5A6C1BE67A6500E9E98C /* matchViewController.h */,
-				257A5A6D1BE67A6500E9E98C /* matchViewController.m */,
-				251CC0651BDEC78600979205 /* relephantGroupClass.h */,
-				251CC0661BDEC78600979205 /* relephantGroupClass.m */,
-				251CC0681BDEC7B800979205 /* relephantUserClass.h */,
-				251CC0691BDEC7B800979205 /* relephantUserClass.m */,
+				257A5A6C1BE67A6500E9E98C /* MatchViewController.h */,
+				257A5A6D1BE67A6500E9E98C /* MatchViewController.m */,
+				890301391BE6B12A00B90767 /* RelephantDataStore.h */,
+				8903013A1BE6B12A00B90767 /* RelephantDataStore.m */,
+				251CC0651BDEC78600979205 /* RelephantGroup.h */,
+				251CC0661BDEC78600979205 /* RelephantGroup.m */,
+				251CC0681BDEC7B800979205 /* RelephantUser.h */,
+				251CC0691BDEC7B800979205 /* RelephantUser.m */,
 				251CC04E1BDEC65200979205 /* AppDelegate.h */,
 				251CC04F1BDEC65200979205 /* AppDelegate.m */,
 				251CC0511BDEC65200979205 /* ViewController.h */,
 				251CC0521BDEC65200979205 /* ViewController.m */,
 				891850BE1BE1307300C24DE3 /* QuizViewController.h */,
 				891850BF1BE1307300C24DE3 /* QuizViewController.m */,
+				890301361BE6A3B100B90767 /* MainViewController.h */,
+				890301371BE6A3B100B90767 /* MainViewController.m */,
 				251CC0541BDEC65200979205 /* Main.storyboard */,
 				251CC05A1BDEC65200979205 /* Assets.xcassets */,
 				251CC05C1BDEC65200979205 /* LaunchScreen.storyboard */,
@@ -174,13 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				251CC0531BDEC65200979205 /* ViewController.m in Sources */,
-				251CC06A1BDEC7B800979205 /* relephantUserClass.m in Sources */,
+				251CC06A1BDEC7B800979205 /* RelephantUser.m in Sources */,
 				251CC0591BDEC65200979205 /* relephant.xcdatamodeld in Sources */,
 				891850C01BE1307300C24DE3 /* QuizViewController.m in Sources */,
-				257A5A6E1BE67A6500E9E98C /* matchViewController.m in Sources */,
-				251CC0671BDEC78600979205 /* relephantGroupClass.m in Sources */,
+				890301381BE6A3B100B90767 /* MainViewController.m in Sources */,
+				257A5A6E1BE67A6500E9E98C /* MatchViewController.m in Sources */,
+				251CC0671BDEC78600979205 /* RelephantGroup.m in Sources */,
 				251CC0501BDEC65200979205 /* AppDelegate.m in Sources */,
 				251CC04D1BDEC65200979205 /* main.m in Sources */,
+				8903013B1BE6B12A00B90767 /* RelephantDataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
