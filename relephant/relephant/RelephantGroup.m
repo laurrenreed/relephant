@@ -9,7 +9,7 @@
         return;
     }
     
-    if (self.members.count == 0) {
+    if (self.members.count == 0  || self.members.count == 1) {
         NSLog(@"RelephantGroup.assignMatches: members array has less than 2 users");
         return;
     }
@@ -52,9 +52,8 @@
 //        self.matches[currentUser] = matchedUser;
 //    }
     
+    // TODO: shuffle array
     
-    
-
     for (RelephantUser *currentUser in self.members) {
         
         RelephantUser *userThatHasBeenmatched;
@@ -76,7 +75,6 @@
                 }
             }
         }
-        
         
         self.matches[currentUser.userId] = userThatHasBeenmatched;
     }
@@ -103,8 +101,6 @@
 //        self.matches setValue:user2.userId forKey:user1.userId;
 //        return;
 //    }
-
-// TODO: shuffle array
 
 //NSMutableSet *usersForMatching = [[NSMutableSet alloc] initWithArray:self.members];
 //
