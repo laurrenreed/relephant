@@ -67,7 +67,7 @@
         RelephantUser *user3 = [[RelephantUser alloc] init];
         
         user3.userId = @"user3";
-        user3.name = @"Tom O' Malley";
+        user3.name = @"Tom O'Malley";
         user3.favoriteEmoji = @"frown";
         user3.favoriteAnimal = @"cat";
         user3.favoriteWeather = @"cloudy";
