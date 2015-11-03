@@ -8,4 +8,7 @@
 @property (nonatomic, strong, readonly) NSArray *groups;
 @property (nonatomic, strong, readonly) RelephantUser *loggedInUser;
 
++ (instancetype)sharedRelephantDataStore;
+
+
 @end

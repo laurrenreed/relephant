@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RelephantGroup.h"
 
 @interface GroupViewController : UIViewController
+
+@property (strong, nonatomic) NSString *nameSelected;
+@property (weak, nonatomic) IBOutlet UILabel *priceCapLabel;
+@property (weak, nonatomic) IBOutlet UILabel *giftingDateLabel;
 
 @end

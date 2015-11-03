@@ -29,18 +29,23 @@
         
         RelephantGroup *group1 = [[RelephantGroup alloc] init];
         group1.priceCap = @(25);
+        group1.name = @"IOS Instructors";
         
         RelephantGroup *group2 = [[RelephantGroup alloc] init];
         group2.priceCap = @(50);
+        group2.name = @"Electric Sliders";
+
         
         RelephantGroup *group3 = [[RelephantGroup alloc] init];
         group3.priceCap = @(15);
+        group3.name = @"Coffee People";
+
         
         _groups = @[group1, group2, group3]; // TODO: should we use a dictionary?
         
         // create users...
         
-        RelephantUser *user1 = [[RelephantUser alloc] initWithUserId:@"user1"
+        RelephantUser *user1 = [[RelephantUser alloc] initWithUserId:@"tim.clem"
                                                                 name:@"Tim Clem"
                                                        favoriteEmoji:@"smile"
                                                       favoriteAnimal:@"giraffe"
@@ -91,13 +96,16 @@
                                                           dayOrNight:@"day"
                                                          tacoOrPizza:@"taco"];
         
-        _users = @[user1, user2, user3, user4, user5]; // TODO: should we use a dictionary?
+        _users = @[user1, user2, user3]; // TODO: should we use a dictionary?
+        //took user 5 & 4out for sake of cheating the demo
         
         // add users to groups...
         
         group1.members = [@[ user1, user2, user3, user4, user5] mutableCopy];
         group2.members = [@[ user2, user4] mutableCopy];
         group3.members = [@[ user1, user3, user5] mutableCopy];
+        
+        self.groups = [@[group1, group2, group3] mutableCopy];
         
         // set logged in user...
         _loggedInUser = user1;

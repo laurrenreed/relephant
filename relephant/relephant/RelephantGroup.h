@@ -8,6 +8,7 @@
 @property (strong, nonatomic) NSMutableArray *members;
 @property (strong, nonatomic) NSMutableDictionary *matches; // map the userId to the matched userId
 @property (strong, nonatomic) NSNumber *priceCap;
+@property (strong, nonatomic) NSString *groupGiftingDate;
 @property (strong, nonatomic) NSString *groupDetail;
 
 -(void)assignMatches;
