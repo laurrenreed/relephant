@@ -24,7 +24,7 @@
     
     NSLog(@"View loaded in groupview controller");
     
-    NSLog(@"DID THIS WORK:? %@", self.nameSelected);
+    NSLog(@"DID THIS WORK:? %@", self.chosenGroup.name);
     // Do any additional setup after loading the view.
 }
 

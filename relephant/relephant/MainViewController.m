@@ -29,6 +29,10 @@
     
     self.dataStore = [RelephantDataStore sharedRelephantDataStore];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"christmasStrip"]];
+//    self.view.backgroundColor.contentMode = UIViewContentModeScaleAspectFit;
+
+    
     
 }
 
@@ -56,6 +60,7 @@
         return self.dataStore.users.count;
     } else {
         
+        NSLog(@"What is the count here: %ld", self.dataStore.groups.count);
         
         return self.dataStore.groups.count;
     }
@@ -135,6 +140,9 @@
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      
+     NSIndexPath *test = self.groupsTableView.indexPathForSelectedRow;
+     RelephantGroup *testingGroup = self.dataStore.groups[test.row];
+     
      if ([segue.identifier isEqualToString:@"matchViewSegue"]) {
          
          MatchViewController *destVC = segue.destinationViewController;
@@ -146,11 +154,15 @@
          
      } else if([segue.identifier isEqualToString:@"GroupViewSegue"]){
         
-         GroupViewController *destVC = segue.destinationViewController;
+         NSIndexPath *test = self.groupsTableView.indexPathForSelectedRow;
+         RelephantGroup *testingGroup = self.dataStore.groups[test.row];
          
-         NSIndexPath *selectedIP = self.groupsTableView.indexPathForSelectedRow;
-         RelephantGroup *selectedGroup = self.dataStore.groups[selectedIP.row];
-         destVC.se
+         GroupViewController *destinationVC = segue.destinationViewController;
+         
+         destinationVC.chosenGroup = testingGroup;
+    
+         
+//         destVC.se
         
      } else{
          //wtf am i doing 

@@ -14,5 +14,6 @@
 @property (strong, nonatomic) NSString *nameSelected;
 @property (weak, nonatomic) IBOutlet UILabel *priceCapLabel;
 @property (weak, nonatomic) IBOutlet UILabel *giftingDateLabel;
+@property (strong, nonatomic) RelephantGroup *chosenGroup;
 
 @end
