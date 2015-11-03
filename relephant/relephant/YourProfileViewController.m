@@ -27,7 +27,12 @@
     self.nightVSday.text = @"☀️";
     self.tacoOrPizza.text = @"🍕";
     self.bioBox.text = @"This is my bio where I say things about myself that others probably think are interesting. Good day.";
+    self.bioBox.layer.cornerRadius = 3;
     
+    
+//    UIImageView *backGroundSparkle = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"christmasSparkle"]];
+//    [self.view addSubview:backGroundSparkle];
+ 
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @property (strong, nonatomic, readwrite) NSString *name;
 @property (strong, nonatomic, readwrite) NSString *userId;
-
+@property (strong, nonatomic) UIImage *profilePicture;
 
 // choices for matching...
 @property (strong, nonatomic, readwrite) NSString *favoriteEmoji;
@@ -34,9 +34,10 @@
                    astroSymbol:(NSString *)astroSymbol
                  favoriteSport:(NSString *)sport
                     dayOrNight:(NSString *)dayOrNight
-                   tacoOrPizza:(NSString *)tacoOrPizza;
+                   tacoOrPizza:(NSString *)tacoOrPizza
+                profilePicture:(UIImage *)profilePicture;
 
-- (instancetype)init;
+- (instancetype)init NS_UNAVAILABLE;
 
 
 

@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nightVSday;
 @property (weak, nonatomic) IBOutlet UILabel *tacoOrPizza;
 @property (weak, nonatomic) IBOutlet UITextView *bioBox;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImge;
 
 @end

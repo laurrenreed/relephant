@@ -53,7 +53,8 @@
                                                          astroSymbol:@"capricorn"
                                                        favoriteSport:@"football"
                                                           dayOrNight:@"day"
-                                                         tacoOrPizza:@"pizza"];
+                                                         tacoOrPizza:@"pizza"
+                                                      profilePicture:[UIImage imageNamed:@"tim"]];
         
         RelephantUser *user2 = [[RelephantUser alloc] initWithUserId:@"user2"
                                                                 name:@"Jim Campagno"
@@ -63,7 +64,8 @@
                                                          astroSymbol:@"pisces"
                                                        favoriteSport:@"soccer"
                                                           dayOrNight:@"day"
-                                                         tacoOrPizza:@"pizza"];
+                                                         tacoOrPizza:@"pizza"
+                                                      profilePicture:[UIImage imageNamed:@"jim"]];
         
         RelephantUser *user3 = [[RelephantUser alloc] initWithUserId:@"user3"
                                                                 name:@"Tom O'Malley"
@@ -73,18 +75,20 @@
                                                          astroSymbol:@"gemini"
                                                        favoriteSport:@"baseball"
                                                           dayOrNight:@"night"
-                                                         tacoOrPizza:@"taco"];
-   
+                                                         tacoOrPizza:@"taco"
+                                                      profilePicture:[UIImage imageNamed:@"tom"]];
+        
         
         RelephantUser *user4 = [[RelephantUser alloc] initWithUserId:@"user4"
-                                                                name:@"Mark Ward Murry"
+                                                                name:@"Mark Murry"
                                                        favoriteEmoji:@"wink"
                                                       favoriteAnimal:@"dog"
                                                      favoriteWeather:@"sunshine"
                                                          astroSymbol:@"aries"
                                                        favoriteSport:@"soccer"
                                                           dayOrNight:@"night"
-                                                         tacoOrPizza:@"taco"];
+                                                         tacoOrPizza:@"taco"
+                                                      profilePicture:[UIImage imageNamed:@"mark"]];
       
         RelephantUser *user5 = [[RelephantUser alloc] initWithUserId:@"user5"
                                                                 name:@"Joe Burges"
@@ -94,7 +98,8 @@
                                                          astroSymbol:@"capricorn"
                                                        favoriteSport:@"football"
                                                           dayOrNight:@"day"
-                                                         tacoOrPizza:@"taco"];
+                                                         tacoOrPizza:@"taco"
+                                                      profilePicture:[UIImage imageNamed:@"joe"]];
         
         _users = @[user1, user2, user3]; // TODO: should we use a dictionary?
         //took user 5 & 4out for sake of cheating the demo

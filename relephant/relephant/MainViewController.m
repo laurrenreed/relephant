@@ -27,22 +27,37 @@
     self.groupsTableView.delegate = self;
     self.groupsTableView.dataSource = self;
     
+    
+    
     self.dataStore = [RelephantDataStore sharedRelephantDataStore];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"christmasStrip"]];
 //    self.view.backgroundColor.contentMode = UIViewContentModeScaleAspectFit;
 
+//    UIImage *christmasBarBackground = [UIImage imageNamed:@"christmasStrip"];
+//    
+//    [self.navigationController.navigationBar setBackgroundImage:christmasBarBackground forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+//    
+
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+
     
+//    self.navigationController.navigationBar.translucent = YES;
+//    self.navigationController.navigationBar.alpha = 0.75;
+//    
     
 }
+
 
 -(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     [self.matchesTableView reloadData];
     [self.groupsTableView reloadData];
-    
-    
 }
 
 

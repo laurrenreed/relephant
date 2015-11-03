@@ -56,7 +56,8 @@
                    astroSymbol:(NSString *)astroSymbol
                  favoriteSport:(NSString *)sport
                     dayOrNight:(NSString *)dayOrNight
-                   tacoOrPizza:(NSString *)tacoOrPizza {
+                   tacoOrPizza:(NSString *)tacoOrPizza
+                profilePicture:(UIImage *)profilePicture{
     
     self = [super init];
     
@@ -70,6 +71,7 @@
         _favoriteSport = sport;
         _dayOrNight = dayOrNight;
         _tacoOrPizza = tacoOrPizza;
+        _profilePicture = profilePicture;
         
         _groupsIds = [NSArray new];
         _highestMatchScore = 0;
@@ -79,7 +81,6 @@
 
     
 }
-
 
 - (instancetype)init {
     
@@ -91,11 +92,8 @@
                     astroSymbol:@""
                   favoriteSport:@""
                      dayOrNight:@""
-                    tacoOrPizza:@""];
+                    tacoOrPizza:@""
+                 profilePicture:nil];
 }
-
-
-
-
 
 @end
